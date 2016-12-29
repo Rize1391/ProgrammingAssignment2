@@ -1,11 +1,13 @@
 # cachematrix.R
 # example usage:
-#> source("cachematrix.R")
+#> Initialize variable
 #> aSquareMatrix <- makeCacheMatrix(matrix(0:8, 8, 8))
+
 #> squareMatrix$getMatrix()
 #> aSquareMatrix$getCache() # will return NULL for the 1st time
+
 #> cacheSolve(aSquareMatrix)
-#> aSquareMatrix$getCache() # will return the 
+#> aSquareMatrix$getCache() # will return the solution
 
 makeCacheMatrix <- function(x = matrix()) {
   
